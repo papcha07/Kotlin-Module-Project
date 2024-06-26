@@ -16,7 +16,10 @@ abstract class BaseMenu<T>(val items: MutableList<T>, val itemName: String) : Me
             val choice = checkInput(items.size + 1)
             when (choice) {
                 0 -> createItem()
-                items.size + 1 -> return
+                items.size + 1 ->{
+                    println("До свидания!")
+                    break
+                }
                 else -> openItem(choice - 1)
             }
         }
