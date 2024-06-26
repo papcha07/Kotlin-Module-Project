@@ -1,0 +1,6 @@
+interface Menu {
+
+    fun showMenu()
+
+
+}
